@@ -28,10 +28,34 @@
             "cheese"
         ]
     }</center><br><br></li>
-    <li>PATCH Or DELETE  http://127.0.0.1:8000/api/updateOrDelete/str:pk/'   :  To delete or update the record if delete then only pass pizza name in place of "str:pk", for patch you are supposed to pass data as well</li>
-    <li>POST  http://127.0.0.1:8000/api/filterPizza/  :  To filter and then get the pizzas,  you can either pass size or type or both in the data</li><br>
-    <li>POST  http://127.0.0.1:8000/api/addSize/   :  To add size</li>
-    <li>POST  http://127.0.0.1:8000/api/addTopping/   :  To add Toppings</li>
+    <li>PATCH Or DELETE  http://127.0.0.1:8000/api/updateOrDelete/str:pk/'   :  To delete or update the record if delete then only pass pizza name in place of "str:pk", for patch you are supposed to pass data as well<br> <br>
+    <center>  data =   {
+        "toppings": [
+            "capsicum",
+            "cheese",
+            "onion"
+        ]
+    }</center><br><br></li>
+    <li>POST  http://127.0.0.1:8000/api/filterPizza/  :  To filter and then get the pizzas,  you can either pass size or type or both in the data<br> <br>
+    <center>  data =   {
+        "types": "Regular",
+        "size": "medium",
+    }</center><br>
+        <center>  data =   {
+        "types": "Regular",
+    }</center><br>
+    <center>  data =   {
+        "size": "medium",
+    }</center><br><br>
+    </li>
+    <li>POST  http://127.0.0.1:8000/api/addSize/   :  To add size</li><br><br>
+    <center>  data =   {
+        "name": "mediumSmall",
+    }</center><br><br>
+    <li>POST  http://127.0.0.1:8000/api/addTopping/   :  To add Toppings</li><br><br>
+    <center>  data =   {
+        "name": "Potato",
+    }</center><br><br>
     <li>GET  http://127.0.0.1:8000/api/getSize/   :  To get size</li>
     <li>GET  http://127.0.0.1:8000/api/getTopping/   :  To get toppings</li>
 </ul>
