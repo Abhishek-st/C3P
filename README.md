@@ -13,3 +13,16 @@
     <li> Type command "python manage.py runserver"</li>
     <li> Now you are ready for testing the API"</li>
 </ul>
+<br><br>
+
+<h2>EndPoints</h2>
+<ul>
+    <li>GET  http://127.0.0.1:8000/api/getPizzas/   :  To get all pizzas</li>
+    <li>POST http://127.0.0.1:8000/api/createPizzas/   :  To create a new pizza </li>
+    <li>PATCH Or DELETE  updateOrDelete/<str:pk>/'   :  To delete or update the record if delete then only pass pizza name in place of <str:pk>, for patch you are supposed to pass data as well</li>
+    <li>POST  http://127.0.0.1:8000/api/filterPizza/  :  To filter and then get the pizzas,  you can either pass size or type or both in the data</li><br>
+    <li>POST  http://127.0.0.1:8000/api/addSize/   :  To add size</li>
+    <li>POST  http://127.0.0.1:8000/api/addTopping/   :  To add Toppings</li>
+    <li>GET  http://127.0.0.1:8000/api/getSize/   :  To get size</li>
+    <li>GET  http://127.0.0.1:8000/api/getTopping/   :  To get toppings</li>
+</ul>
