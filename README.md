@@ -18,8 +18,8 @@
 <h2>EndPoints</h2>
 <ul>
     <li>GET  http://127.0.0.1:8000/api/getPizzas/   :  To get all pizzas</li>
-    <li>POST http://127.0.0.1:8000/api/createPizzas/   :  To create a new pizza <br> 
-    <center>    {
+    <li>POST http://127.0.0.1:8000/api/createPizzas/   :  To create a new pizza <br> <br>
+    <center>  data =   {
         "name": "Margerita",
         "types": "Regular",
         "size": "medium",
@@ -27,7 +27,7 @@
             "capsicum",
             "cheese"
         ]
-    }</center></li>
+    }</center><br><br></li>
     <li>PATCH Or DELETE  http://127.0.0.1:8000/api/updateOrDelete/str:pk/'   :  To delete or update the record if delete then only pass pizza name in place of "str:pk", for patch you are supposed to pass data as well</li>
     <li>POST  http://127.0.0.1:8000/api/filterPizza/  :  To filter and then get the pizzas,  you can either pass size or type or both in the data</li><br>
     <li>POST  http://127.0.0.1:8000/api/addSize/   :  To add size</li>
